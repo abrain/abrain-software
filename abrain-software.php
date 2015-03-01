@@ -36,6 +36,13 @@ class Main {
             false,
             '4.1.0'
         );
+
+        wp_enqueue_style(
+            'abrain-software',
+            self::$pluginUrl . 'style.css',
+            false,
+            '0.1.0'
+        );
     }
 }
 
