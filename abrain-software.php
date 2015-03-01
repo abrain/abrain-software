@@ -26,6 +26,7 @@ class Main {
     private function addHooks()
     {
         add_action('wp_enqueue_scripts', array($this, 'enqueueStyleAndScripts'));
+        add_action('admin_enqueue_scripts', array($this, 'enqueueStyleAndScripts'));
     }
 
     public function enqueueStyleAndScripts()
